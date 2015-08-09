@@ -336,7 +336,9 @@ label strong {
   }
   .wrapper {
     height: 100%;
-    background-size: cover;
+    background-color: white;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
     background-position: 50% 0%;
   }
   .wrapper .content {
