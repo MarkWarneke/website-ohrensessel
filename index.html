@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Ohrensessel Prototyp</title>
 
     <!-- Bootstrap -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,21 +18,80 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+	<body class="nosch">
+
+	  <!--[if lt IE 8]>
+	<p class="browserupgrade">Sie verwerden einen <strong>veralteteten</strong> Browser mit <strong>Sicherheitsschwachstellen</strong>. Bitte <a href="http://browsehappy.com/">updaten Sie ihren Browser</a>.</p>
+	<![endif]-->
+
+	  <div class="container-wrapper">
+
+	    <div id="logo">
 
 
-    <a class="nav-button nav-prev" href="">
+			</div>
+
+
+	    <nav>
+	      <div id="mobile-nav">
+	        <svg>
+	          <rect width="30" height="3" rx="2" ry="2"></rect>
+	          <rect y="7" width="30" height="3" rx="2" ry="2"></rect>
+	          <rect y="14" width="30" height="3" rx="2" ry="2"></rect>
+	        </svg>
+	        <span>Menü</span>
+	      </div>
+	      <ul>
+					<li class="selected"><a href="http://www.polsterei-muenster.eu/home/">Home</a></li>
+					<li><a href="http://www.polsterei-muenster.eu/polsterei/">Polsterei</a></li>
+					<li><a href="http://www.polsterei-muenster.eu/stoffe/">Stoffe</a></li>
+					<li><a href="http://www.polsterei-muenster.eu/manufaktur/">Manufaktur</a></li>
+					<li><a href="http://www.polsterei-muenster.eu/referenzen/">Referenzen</a></li>
+					<li><a href="http://www.polsterei-muenster.eu/beratung/">Beratung</a></li>
+					<li><a href="http://www.polsterei-muenster.eu/dankeschoen/">Dankeschön</a></li>
+					<li><a href="http://www.polsterei-muenster.eu/kontakt/">Kontakt</a></li>
+					<li><a href="http://www.polsterei-muenster.eu/impressum/">Impressum</a></li>
+					<li><a href="http://www.polsterei-muenster.eu/datenschutz/">Datenschutz</a></li>
+				</ul>
+	    </nav>
+
+
+	    <a class="nav-button nav-prev" href="">
 	      <img src="res/images/nav-prev.png" alt="">
 	    </a>
 
+	    <a class="nav-button nav-next" href="">
+	      <img src="res/images/nav-next.png" alt="">
+	    </a>
 
-    <img class="wrapper"> </img>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/js.js"></script>
-  </body>
+	    <div class="info-wrapper">
+	      <a class="info" href="http://www.sensa.eu/">
+	        weitere Sensá-Webseiten
+	      </a>
+	      <a class="info" href="/kontakt.html">
+	        Sofort-Kontakt
+	      </a>
+	    </div>
+
+
+	    <div class="wrapper" style="background-image: url(http://www.polsterei-muenster.eu/uploads/tx_templavoila/SEN_web_fgrB_fotoliaFrauaufSofa.jpg); display: block;">
+	      <div class="mobile">
+	        <img src="http://www.polsterei-muenster.eu/typo3temp/_processed_/csm_SEN_web_fgrB_fotoliaFrauaufSofa_01_f172cfd145.jpg">
+	      </div>
+
+	      <div class="content">
+	        <h1 style="color:#333;">Schauen Sie sich in Ruhe bei uns um, und entdecken Sie unser textiles Können.</h1>
+	      </div>
+	    </div>
+	  </div>
+
+	</body>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/js.js"></script>
+
 </html>
