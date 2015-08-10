@@ -2,10 +2,12 @@ html {
   margin-left: 20px;
 }
 
+#preview {
+  
+}
+
 #preview  img{
-	border: 3px solid black;
-	border-radius: 5px;
-  box-shadow: 5px 20px 30px black;
+  height: 100%;
 }
 
 input, label {
@@ -15,13 +17,13 @@ input, label {
 
 input {
   margin: 0 0 1em .2em;
-  padding: .2em .5em;  
+  padding: .2em .5em;
   background-color: #FFF5D7;
   border: 1px solid #FFF5D7;
-  border-radius: 5px;  
+  border-radius: 5px;
 }
 
-label { 
+label {
   text-align: left;
   line-height: 1.5;
 }
@@ -31,7 +33,7 @@ label::after {
 }
 
 .js-hide-label label {
-  opacity: 0; 
+  opacity: 0;
   top: 1.5em;
 }
 
@@ -49,6 +51,6 @@ label {
   border: 1px solid red;
 }
 
-.js-validation-input::-webkit-input-placeholder { 
+.js-validation-input::-webkit-input-placeholder {
     color: red;
 }

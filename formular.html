@@ -4,15 +4,10 @@
         <title>Mitmachseite</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap -->
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/formular.css" rel="stylesheet">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type="text/javascript" src="formular.js"></script>
-
-        <link href="http://www.polsterei-muenster.eu/fileadmin/templates/css/bootstrap.min.css" rel="stylesheet" />
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        
-
-        <link href="formular.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
       <div class="container">
@@ -48,7 +43,7 @@
 
                 <div class="row">
                   <div class="col-md-12">
-                    
+
                   </div>
                 </div>
 
@@ -58,19 +53,19 @@
                     <h4><span class="glyphicon glyphicon-pencil" />&nbsp;Kontaktdaten</h4>
                     <form role="form" id="contactform" action="mailto:someone@example.com" method="post" enctype="text/plain">
                       <div class="form-group">
-                        <label for="name">Vor- und Nachname</label> 
+                        <label for="name">Vor- und Nachname</label>
                         <input type="text" minlenght="2" class="form-control" id="name" placeholder="Vor- und Nachname" required>
                       </div>
                       <div class="form-group">
-                        <label for="address">Straße und Hausnummer</label>  
+                        <label for="address">Straße und Hausnummer</label>
                         <input type="text" class="form-control" id="address" placeholder="Straße und Hausnummer">
                       </div>
                       <div class="form-group">
-                        <label for="zipcode">Plz, Ort</label>  
+                        <label for="zipcode">Plz, Ort</label>
                         <input type="text" class="form-control" id="zipcode" placeholder="Plz, Ort">
                       </div>
                       <div class="form-group">
-                        <label for="phone">Telefonnummer</label>  
+                        <label for="phone">Telefonnummer</label>
                         <input type="text" class="form-control" id="phone" placeholder="Telefonnummer" required>
                       </div>
                       <div class="form-group">
@@ -90,4 +85,11 @@
         </div>
       </div>
     </body>
+
+
+    	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    	<script src="js/formular.js"></script>
 </html>
