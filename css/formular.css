@@ -2,12 +2,14 @@ html {
   margin-left: 20px;
 }
 
-#preview {
-  
-}
-
 #preview  img{
   height: 100%;
+}
+
+.btn {
+  color: #fff;
+  background-color: #b3002f;
+  border-color: #b3002f;
 }
 
 input, label {
@@ -23,11 +25,6 @@ input {
   border-radius: 5px;
 }
 
-label {
-  text-align: left;
-  line-height: 1.5;
-}
-
 label::after {
   content: ": ";
 }
@@ -38,6 +35,8 @@ label::after {
 }
 
 label {
+  text-align: left;
+  line-height: 1.5;
   -webkit-transition: .333s ease top, .333s ease opacity;
   transition: .333s ease top, .333s ease opacity;
 }
