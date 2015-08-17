@@ -7,7 +7,7 @@ body {
   height: auto !important;
   min-height: 100%;
   position: absolute;
-
+top: 0;
 
 }
 
@@ -114,4 +114,124 @@ a.info {
 .carousel-inner > .item > img {
   display: inline;
   height: 100%;
+}
+
+nav #mobile-nav {
+  display: block;
+  margin: -3.5em 1em 2.25em;
+  padding: 0;
+  width: 20%;
+  height: 17px;
+  cursor: pointer;
+}
+
+nav #mobile-nav svg {
+  display; block;
+  width: 20%;
+  height: 17px;
+  fill: #fff;
+}
+nav #mobile-nav svg rect {
+  fill: #eee;
+}
+nav #mobile-nav:hover svg rect {
+  fill: #fff;
+}
+nav ul.open {
+  display: block;
+  visibility: visible;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: 0;
+}
+nav ul li a {
+  display: block;
+  padding: 1em;
+  font-size: .75em;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li.selected a {
+  text-decoration: underline;
+}
+
+nav {
+    position: absolute;
+    left: 0px;
+    background-color: transparent;
+    padding: 1em 0.5em;
+    z-index: 19999;
+    width: 10%;
+    height: 100%;
+}
+nav #mobile-nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  height: 17px;
+  cursor: default;
+}
+nav #mobile-nav span {
+  display: inline;
+  visibility: visible;
+  color: #eee;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+}
+nav #mobile-nav:hover span {
+  color: #fff;
+}
+nav #mobile-nav svg {
+  display; block;
+  width: 20%;
+  height: 17px;
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=1, Color='#444')";
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.8));
+  filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.8));
+}
+nav #mobile-nav svg rect {
+  fill: #eee;
+}
+nav #mobile-nav:hover svg rect {
+  fill: #fff;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: 0;
+  display: block;
+  visibility: visible;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+}
+nav ul li {
+  margin: 1em 0 0;
+}
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  display: inline;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 1em;
+}
+nav ul li a {
+  text-decoration: underline;
+  color: #fff;
+}
+nav {
+    background-color: rgba(0,0,0,0.5);
+}
+nav > ul {
+  max-height: 600px;
+  margin-top: 1em;
 }
