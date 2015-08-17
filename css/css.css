@@ -17,13 +17,11 @@ body {
   overflow: hidden;
   position: absolute;
 
+    width: 100%;
   text-align: center;
   color: #FFF;
   text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.5);
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+
 }
 
 
@@ -89,4 +87,31 @@ a.info {
   margin-top: 200px;
   height: 500px;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+
+.carousel-inner > .item {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.carousel-inner {
+    min-height: 100% !important;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+
+.carousel-inner > .item > img {
+  display: inline;
+  height: 100%;
 }

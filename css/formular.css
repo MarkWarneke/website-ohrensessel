@@ -53,3 +53,11 @@ label {
 .js-validation-input::-webkit-input-placeholder {
     color: red;
 }
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
