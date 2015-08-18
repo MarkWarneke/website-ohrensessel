@@ -61,3 +61,34 @@ label {
 .carousel-control.right {
   background-image: none;
 }
+
+.carousel-inner > .item {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .camera {
+      position: absolute;
+    margin-left: 50px;
+  height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .picker {
+    padding-top: 50px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50%;
+  }
+
+  .col-xs-12 {
+    height: 100%;
+  }
+
+.start{
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 50px;
+  }

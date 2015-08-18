@@ -23,6 +23,7 @@
 
     <section class="cover">
       <div class="container">
+        <!--
         <a class="nav-button nav-prev pull-left" >
           <img src="res/images/nav-prev.png" alt="">
         </a>
@@ -30,8 +31,7 @@
 
         <a class="nav-button nav-prev pull-right" >
           <img src="res/images/nav-next.png" alt="">
-        </a>
-
+        </a>-->
 
         <div class="col-lg-5 camera">
           <h4><span class="glyphicon glyphicon-camera" />&nbsp;Bild</h4>
@@ -46,6 +46,7 @@
           </div>
         </div>
         <div class="col-lg-5 picker">
+          <div class="col-xs-12">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -85,16 +86,9 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+        </div>
       </div>
 
-      <div class="col-lg-12">
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Prototyp starten</button>
-      </div>
-
-
-
-      </div>
     </section>
 
 
@@ -102,14 +96,14 @@
       <a class="info" href="http://www.sensa.eu/">
         weitere Sensá-Webseiten
       </a>
-      <a class="info" href="http://www.polsterei-muenster.eu/kontakt/">
+      <a class="info"  data-toggle="modal" data-target="#myModal" >
         Sofort-Kontakt
       </a>
     </aside>
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header" style="padding:35px 50px;">

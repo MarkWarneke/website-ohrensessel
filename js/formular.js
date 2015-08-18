@@ -84,6 +84,6 @@ function previewImage(e)
 {
     var img = $(document.createElement('img'));
     $('#preview img').remove();
-    $(img).attr('src', e.target.result).height('400px');
+    $(img).attr('src', e.target.result).width('100%');
     $('#preview').append(img);
 }
