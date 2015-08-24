@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @formular.image.url %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @formular.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @formular.last_name %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @formular.street %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @formular.zip %>
+</p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @formular.site %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @formular.information %>
+</p>
+
+<%= link_to 'Edit', edit_formular_path(@formular) %> |
+<%= link_to 'Back', formulars_path %>
