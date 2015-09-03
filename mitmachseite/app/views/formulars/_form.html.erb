@@ -1,57 +1,81 @@
-<%= form_for(@formular,url: formulars_path, html: { multipart: true }) do |f| %>
-  <% if @formular.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@formular.errors.count, "error") %> prohibited this formular from being saved:</h2>
+<div class="row">
+  <div class="col-md-12"
+    <!-- Large modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formular_modal">Large modal</button>
 
-      <ul>
-      <% @formular.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <div id="formular_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="formularModal">
+      <div class="large">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <%= form_for(@formular,url: formulars_path, html: { multipart: true }) do |f| %>
+              <% if @formular.errors.any? %>
+                <div id="error_explanation">
+                  <h2><%= pluralize(@formular.errors.count, "error") %> prohibited this formular from being saved:</h2>
+
+                  <ul>
+                  <% @formular.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                  <% end %>
+                  </ul>
+                </div>
+              <% end %>
+
+              <div id="preview">
+                <!-- Hier erscheinen die Vorschaubilder -->
+              </div>
+
+              <div class="field">
+                <%= f.label :image %><br>
+                <%= f.file_field :image, :multiple => true, id:"file-upload" %>
+              </div>
+              <div class="field">
+                <%= f.label :first_name %><br>
+                <%= f.text_field :first_name %>
+              </div>
+              <div class="field">
+                <%= f.label :last_name %><br>
+                <%= f.text_field :last_name %>
+              </div>
+              <div class="field">
+                <%= f.label :street %><br>
+                <%= f.text_field :street %>
+              </div>
+              <div class="field">
+                <%= f.label :zip %><br>
+                <%= f.number_field :zip %>
+              </div>
+              <div class="field">
+                <%= f.label :site %><br>
+                <%= f.text_field :site %>
+              </div>
+              <div class="field">
+                <%= f.label :information %><br>
+                <%= f.text_area :information %>
+              </div>
+              <div class="actions">
+                <%= f.submit %>
+              </div>
+            <% end %>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
-  <% end %>
 
-  <div id="preview">
-    <!-- Hier erscheinen die Vorschaubilder -->
-  </div>
 
-  <div class="field">
-    <%= f.label :image %><br>
-    <%= f.file_field :image, :multiple => true, id:"file-upload" %>
-  </div>
-  <div class="field">
-    <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
-  </div>
-  <div class="field">
-    <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="field">
-    <%= f.label :street %><br>
-    <%= f.text_field :street %>
-  </div>
-  <div class="field">
-    <%= f.label :zip %><br>
-    <%= f.number_field :zip %>
-  </div>
-  <div class="field">
-    <%= f.label :site %><br>
-    <%= f.text_field :site %>
-  </div>
-  <div class="field">
-    <%= f.label :information %><br>
-    <%= f.text_area :information %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-
-<div>
-  <div class="owl-carousel">
-    <% @wingbacks.each do |wc| %>
-      <div><%= image_tag(wc.image.url(:medium)) %></div>
-    <% end %>
+    <div>
+      <div class="owl-carousel">
+        <% @wingbacks.each do |wc| %>
+          <div><%= image_tag(wc.image.url(:medium)) %></div>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

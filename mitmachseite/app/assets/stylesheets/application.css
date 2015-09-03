@@ -17,3 +17,12 @@
  *= require bootstrap-modal-bs3patch
  *= require bootstrap-modal
  */
+
+ .large {
+      width: 100%;
+ }
+
+ #formular_modal {
+   left: 25%;
+   width: 85%;
+ }
