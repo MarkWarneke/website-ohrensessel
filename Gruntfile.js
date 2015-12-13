@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       build: {
         src: 'src/js/*.js',
-        dest: 'build/<%= pkg.name %>.min.js'
+        dest: 'bin/js/<%= pkg.name %>.min.js'
       }
     },
 
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
             cwd: 'src/img/',
             src: ['**/*.jpg'],
             // Could also match cwd. i.e. project-directory/img/
-            dest: 'build/img/',
+            dest: 'bin/img/',
             ext: '.jpg'
           }
         ]
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
        expand: true,
        cwd: 'src/css',
        src: ['*.sass'],
-       dest: 'build/css/',
+       dest: 'bin/css/',
        ext: '.css'
      }]
    },
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 
    browserSync: {
     	bsFiles: {
-         src : 'build/css/*.css'
+         src : 'bin/css/*.css'
        },
        options: {
 	       server: {
