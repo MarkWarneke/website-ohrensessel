@@ -1,0 +1,270 @@
+body {
+  background: url("../../bin/img/background.jpg") repeat;
+}
+
+.cover {
+  width: 100%;
+  height: auto !important;
+  min-height: 100%;
+  position: absolute;
+top: 0;
+
+}
+
+.container {
+  height: auto !important;
+  min-height: 100%;
+  overflow: hidden;
+  position: absolute;
+
+    width: 100%;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.nav-button img{
+  width: 100%;
+  height: auto;
+  text-shadow: 0px 0px 10px #000;
+}
+
+.logo img {
+  height: 150px;
+  vertical-align: top;
+  position: absolute;
+}
+
+.nav-button {
+  z-index: 999;
+  display: block;
+  width: 35px;
+  height: 44px;
+  margin-top: 45%;
+  color: #FFF;
+  opacity: 0.8;
+  transition: all 0.35s ease 0s;
+}
+
+a.nav-button:hover {
+  opacity: 1;
+}
+.info-wrapper {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    z-index: 999;
+    right: 0px;
+    top: 10%;
+    width: 7em;
+
+}
+a.info {
+  background-color: #B3002F;
+  color: #FFF;
+  display: block;
+  padding: 0.75em;
+  font-size: 1em;
+  font-weight: 700;
+  border-bottom: 0px solid;
+  margin-bottom: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+
+
+.carousel-control.left {
+  background-image: none;
+
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+
+.carousel-inner > .item {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.carousel-control {
+  width: 35%;
+  opacity: 0.8;
+}
+
+.carousel-control:hover {
+  color: #B3002F;
+}
+
+a:hover {
+  color: black;
+}
+
+
+.carousel-inner {
+    min-height: 100% !important;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+
+.carousel-inner > .item > img {
+  display: inline;
+  height: 100%;
+}
+
+nav #mobile-nav {
+  display: block;
+  margin: -3.5em 1em 2.25em;
+  padding: 0;
+  width: 20%;
+  height: 17px;
+  cursor: pointer;
+}
+
+nav #mobile-nav svg {
+  display; block;
+  width: 20%;
+  height: 17px;
+  fill: #fff;
+}
+nav #mobile-nav svg rect {
+  fill: #eee;
+}
+nav #mobile-nav:hover svg rect {
+  fill: #fff;
+}
+nav ul.open {
+  display: block;
+  visibility: visible;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: 0;
+}
+nav ul li a {
+  display: block;
+  padding: 1em;
+  font-size: .75em;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li.selected a {
+  text-decoration: none;
+      color: black;
+
+}
+
+li.selected {
+    background-color: #E6E6E6;
+}
+
+nav {
+    position: absolute;
+    left: 0px;
+    background-color: transparent;
+
+    z-index: 19999;
+    width: 10%;
+    height: 100%;
+    min-width: 150px;
+}
+nav #mobile-nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  height: 17px;
+  cursor: default;
+}
+nav #mobile-nav span {
+  display: inline;
+  visibility: visible;
+  color: #eee;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+}
+nav #mobile-nav:hover span {
+  color: #fff;
+}
+nav #mobile-nav svg {
+  display; block;
+  width: 20%;
+  height: 17px;
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=1, Color='#444')";
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.8));
+  filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.8));
+}
+nav #mobile-nav svg rect {
+  fill: #eee;
+}
+nav #mobile-nav:hover svg rect {
+  fill: #fff;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: 0;
+  display: block;
+  visibility: visible;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  display: inline;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 1em;
+}
+nav ul li a {
+  color: #fff;
+}
+nav {
+    background-color: rgba(0,0,0,0.5);
+}
+nav > ul {
+  min-height: 100%;
+  padding-top: 2em;
+}
+
+.container {
+  padding-right: 0;
+padding-left: 0;
+margin-right: 0;
+margin-left: 0;
+}
+
+.btn-lg {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.33333;
+  border-radius: 0px;
+}
+
+.btn-default {
+  background-color: rgba(0,0,0,0);
+  border-color: #CCC;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.btn-default:hover > a {
+color: #333;
+}
