@@ -1,0 +1,23 @@
+{
+  "name": "ohrensessel.eu",
+  "version": "1.0.0",
+  "description": "Webseite von Sensá ohrensessel.eu",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^3.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mark-mit-k/ohrensessel.git"
+  },
+  "author": "Mark Warneke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mark-mit-k/ohrensessel/issues"
+  },
+  "homepage": "https://github.com/mark-mit-k/ohrensessel#readme"
+}
