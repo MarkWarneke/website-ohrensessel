@@ -122,4 +122,5 @@ module.exports = function(grunt) {
   grunt.registerTask('imagejpg', ['imagemin:jpg']);// only .jpg files
   grunt.registerTask('css', ['sass']);
   grunt.registerTask('cp', ['copy']);
+  grunt.registerTask('s', ['serve']);
   };
