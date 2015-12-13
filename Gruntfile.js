@@ -2,13 +2,16 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+
     pkg: grunt.file.readJSON('package.json'),
+
+    // uglify
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'src/js/*.js',
+        src: 'src/js/js.js',
         dest: 'bin/js/<%= pkg.name %>.min.js'
       }
     },
@@ -27,7 +30,7 @@ module.exports = function(grunt) {
             cwd: 'src/img/',
             src: ['**/*.png'],
             // Could also match cwd line above. i.e. project-directory/img/
-            dest: 'build/img/',
+            dest: 'bin/img/',
             ext: '.png'
           }
         ]
@@ -49,44 +52,46 @@ module.exports = function(grunt) {
           }
         ]
       }
-     },
-
-   dist: {                            // Target
-     options: {                       // Target options
-       style: 'expanded'
-     
-     files: [{
-       expand: true,
-       cwd: 'src/css',
-       src: ['*.sass'],
-       dest: 'bin/css/',
-       ext: '.css'
-     }]
-   },
-
-   watch: {
-   	files: 'src/css/*.sass',
-	tasks: ['css'],
-	files : 'src/img/*.jpg',
-	tasks: ['imagejpg']
-   },
-
-   browserSync: {
-    	bsFiles: {
-         src : 'bin/css/*.css'
-       },
-       options: {
-	       server: {
-		       baseDir: "./"
-	       }
-	}
     },
 
-   serve: {
-    options: {
-        port: 9000
+
+    sass: {                              // Task
+      dist: {                            // Target
+        options: {                       // Target options
+          style: 'expanded'
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/css',
+          src: ['*.sass'],
+          dest: 'bin/css/',
+          ext: '.css'
+        }]
+      },
+
+      watch: {
+        files: 'bin/css/*.sass',
+        tasks: ['css']
+      },
+
+      browserSync: {
+        bsFiles: {
+          src : 'bin/css/*.css'
+        },
+        options: {
+          server: {
+            baseDir: "./"
+          }
+        }
+      },
+
+      serve: {
+        options: {
+          port: 9000
+        }
+      }
     }
-}
+
 
   });
 
@@ -97,15 +102,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-serve');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify', 'sass']);
+  grunt.registerTask('default', ['uglify', 'sass', 'image']);
   // imagemin task(s)
   grunt.registerTask('image', ['imagemin']);
   grunt.registerTask('imagepng', ['imagemin:png']); // only .png files
   grunt.registerTask('imagejpg', ['imagemin:jpg']);// only .jpg files
   grunt.registerTask('css', ['sass']);
-  grunt.loadNpmTasks('grunt-serve');
-
-
 };
