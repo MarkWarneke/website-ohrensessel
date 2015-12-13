@@ -67,6 +67,16 @@ module.exports = function(grunt) {
           dest: 'bin/css/',
           ext: '.css'
         }]
+      }
+    },
+
+      copy: {
+        main: {
+	    expand: true,
+	    cwd: 'src/css/',
+	    src: ['**'],
+	    dest: 'bin/css/'
+	}
       },
 
       watch: {
@@ -90,7 +100,6 @@ module.exports = function(grunt) {
           port: 9000
         }
       }
-    }
 
 
   });
@@ -104,12 +113,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-serve');
-
+  grunt.loadNpmTasks('grunt-contrib-copy');
   // Default task(s).
-  grunt.registerTask('default', ['uglify', 'sass', 'image']);
+  grunt.registerTask('default', ['uglify', 'copy','sass', 'imagemin']);
   // imagemin task(s)
   grunt.registerTask('image', ['imagemin']);
   grunt.registerTask('imagepng', ['imagemin:png']); // only .png files
   grunt.registerTask('imagejpg', ['imagemin:jpg']);// only .jpg files
   grunt.registerTask('css', ['sass']);
-};
+  grunt.registerTask('cp', ['copy']);
+  };
