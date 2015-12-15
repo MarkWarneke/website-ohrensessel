@@ -80,8 +80,8 @@ module.exports = function(grunt) {
       },
 
       watch: {
-        files: 'bin/css/*.sass',
-        tasks: ['css']
+        files: ['bin/css/*.sass', 'bin/css/*.css'],
+        tasks: ['css', 'copy']
       },
 
       browserSync: {
