@@ -80,8 +80,13 @@ module.exports = function(grunt) {
       },
 
       watch: {
-        files: 'bin/css/*.sass',
-        tasks: ['css']
+	options: {
+          livereload: true,
+        },
+        css: {
+          files: ['src/css/*.sass', 'src/css/*.css'],
+          tasks: ['css', 'copy']
+        }
       },
 
       browserSync: {
@@ -122,4 +127,5 @@ module.exports = function(grunt) {
   grunt.registerTask('imagejpg', ['imagemin:jpg']);// only .jpg files
   grunt.registerTask('css', ['sass']);
   grunt.registerTask('cp', ['copy']);
+  grunt.registerTask('s', ['serve']);
   };
