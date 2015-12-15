@@ -26,15 +26,17 @@ html, body{
 }
 
 .centered {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100% !important;
+    max-height: 100% !important!;
     bottom: 0;
     left: 0;
     margin: auto;
     overflow: auto;
-    position: fixed;
+    position: fixed !important;
     right: 0;
     top: 0;
+    height: 100%;
+    width: 100%;
 }
 
 /* -- logo
@@ -43,6 +45,7 @@ html, body{
   background-color: #444;
   padding: .5em 1em;
   text-align: center;
+  background-image: url("../../bin/img/sensa_logo_weiss_gelb.png");
 }
 #logo svg {
   display: block;
