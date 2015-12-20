@@ -27,21 +27,21 @@
 			<img src="bin/img/sensa_logo_weiss_gelb.png" class="logo pull-right"></img>
 			<h2>Herzlich Willkommen bei unseren kultigen Ohrensesseln</h2>
 
-</div>
+		</div>
 		</nav>	
-<nav>
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul>
-					<li class="selected"><a href="/index.html">Home</a></li>
-					<li><a href="/modern.html">Modern</a></li>
-					<li><a href="/klassisch.html">Klassisch</a></li>
-					<li><a href="/ausgefallen.html">Ausgefallen</a></li>
-					<li><a href="/stoffe.html">Stoffe</a></li>
-					<li><a href="/mitmachen.html">Mitmach Seite</a></li>
-					<li><a href="/kontakt.html">Kontakt</a></li>
-					<li><a href="/impressum.html">Impressum</a></li>
-				</ul>
-			</div><!--/.nav-collapse -->
+		<nav>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul>
+				<li class="selected"><a href="/index.html">Home</a></li>
+				<li><a href="./modern.html">Modern</a></li>
+				<li><a href="./klassisch.html">Klassisch</a></li>
+				<li><a href="./ausgefallen.html">Ausgefallen</a></li>
+				<li><a href="./stoffe.html">Stoffe</a></li>
+				<li><a href="/mitmachen.html">Mitmach Seite</a></li>
+				<li><a href="/kontakt.html">Kontakt</a></li>
+				<li><a href="/impressum.html">Impressum</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
 		<div id="mobile-nav">
 			<svg>
 			<rect width="30" height="3" rx="2" ry="2"></rect>
@@ -52,15 +52,15 @@
 		</div>
 		<ul>
 			<li class="selected"><a href="/index.html">Home</a></li>
-			<li><a href="/modern.html">Modern</a></li>
-			<li><a href="/klassisch.html">Klassisch</a></li>
-			<li><a href="/ausgefallen.html">Ausgefallen</a></li>
-			<li><a href="/stoffe.html">Stoffe</a></li>
-			<li><a href="/mitmachen.html">Mitmach Seite</a></li>
-			<li><a href="/kontakt.html">Kontakt</a></li>
-			<li><a href="/impressum.html">Impressum</a></li>
+			<li><a href="./modern.html">Modern</a></li>
+			<li><a href="./klassisch.html">Klassisch</a></li>
+			<li><a href="./ausgefallen.html">Ausgefallen</a></li>
+			<li><a href="./stoffe.html">Stoffe</a></li>
+			<li><a href="./mitmachen.html">Mitmach Seite</a></li>
+			<li><a data-toggle="modal" data-target="#contactModal">Kontakt</a></li>
+			<li><a data-toggle="modal" data-target="#impressumModal">Impressum</a></li>
 		</ul>
-</nav>
+		</nav>
 		<div class="container-wrapper">
 
 			<div id="logo" class="logo"> </div>
@@ -114,11 +114,98 @@
 		<a class="info" href="http://www.sensa.eu/">
 			weitere Sensá-Webseiten
 		</a>
-		<a class="info" href="bin/sites/kontakt.html/">
+		<a class="info" data-toggle="modal" data-target="#contactModal">
 			Sofort-Kontakt
 		</a>
 		</aside>
 
+		<!-- Modal -->
+		<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="contactModalLabel">Kontakt</h4>
+					</div>
+					<div class="modal-body">
+						<h1>Das Sensá-Einrichtungshaus</h1>
+
+						<h3>Geschäftszeiten:</h3>
+						<span>Mo- Mi	9.30 - 18.30 Uhr</span>
+						<span>Do - Fr	9.30 - 19.00 Uhr</span>
+						<span>Sa	9.30 - 17.00 Uhr</span>
+						<p>
+						Gerne vereinbaren wir auch Gesprächstermine und Hausbesuche.
+						Informieren Sie sich über unsere aktuellen Sonderöffnungstermine. Am besten kurz per Anruf.
+						<p>
+						<span>An der Hansalinie 4-6</span>
+
+						<span>D-48163 Münster</span>
+						T +49(0)251 97500-0
+						F +49(0)251 9714180
+						www.sensa.eu
+						kontakt(at)sensa.eu
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="impressumModal" tabindex="-1" role="dialog" aria-labelledby="impressumModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="impressumModalLabel">Impressum</h4>
+					</div>
+					<div class="modal-body">
+<p>
+Verantwortlich für diese Website <br>
+Sensá Einrichtungshaus <br>
+SE Einrichtungshäuser GmbH <br>
+An der Hansalinie 4-6 <br>
+D-48163 Münster-Mecklenbeck <br>
+</p>
+
+Geschäftsinhaber: <br>
+Dipl.-Betriebswirt Rudolf Keuthen<br>
+
+<br>
+Telefon:+49 (251) 975000
+<br>
+Fax: +49 (251) 9714180 
+<br>
+E-Mail: kontakt(at)sensa.eu
+
+<br>
+Verantwortlich für den Inhalt: 
+Dipl.-Betriebswirt Rudolf Keuthen
+<br>
+
+Umsatzsteueridentifikationsnummer: DE 233 207 301
+Handelsregister: Amtsgericht Münster, HRB 3161
+<br>
+Mitglied der/des
+IHK Münster
+HWK Handwerkskammer Münster
+Verein der Kaufmannschaft zu Münster
+Verein SC Preussen Münster
+KV Pohlbürger Münster
+Bruderschaft St. Christoph, Arlberg Österreich
+Ambienta-Möbelkooperation
+Das Raumteam, Handwerker-Kooperation
+BVMW Münster
+Westfälischer Kunstverein
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</body>
 
